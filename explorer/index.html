@@ -106,15 +106,18 @@
 <p><strong>Settings</strong></p>
 <p><img alt="Settings" src="../img/settings.png" title="Settings" /> </p>
 <p>Die Zeitliche Aggregation definiert das Zeitintervall, mit welchem die Daten auf der Karte aggregiert werden. Über die Selectbox <code>Aggregation Karte</code> lässst sich die Funktion einstellen, mit welcher aggregiert wird: Mittelwert, Minimum, Maximum etc. Ist man an den Einzelwerten interessiert, so können diese in der Zeitreihe  eingesehen werden, deren Daten zeitlich nicht oder schwächer als in der Karte aggregiert sind.</p>
-<p><strong>Histogramm und Zeitriehe</strong></p>
-<p>Für das Histogramm ist aktuell die einzige Einstellung die Sichtbarkeit. Das Histogramm bildet die Werte der Stationen auf der Karte ab und zeigt deren Verteilung. Es Werte wich Minimum, Maximum und häufigster Wert lässt sich einfach eruieren. Dies ist interessant bei Sensoren mit vielen Staitonen, z.B. bei der Luft-Temperatur. Bei Sensoren mit wenigen Stationen ist die Histogramm weniger aussagekräftig und kann ausgeblendet werden.</p>
-<p>Die Zeitrihe zeigt den zeitlichen Verlauf der auf der Karte dargestellten Stationen. Bei vielen Stationen mag die Figur verwirrend erschienen, doch gibt diese Darstellung darüber  Ausunft, ob es wenig plausible Messwerte gibt. Es gibt für die Zeitreihe zwei Darstellungen: - keine Aggregation der Stationen: jede Station wird als Linie dargestellt
-- Mittelwert: Mittelwerte aller Stationen 
-- Werteband: Mittelwert mit einenm Werteband Mittelwert +/- Standardabweichung, welches die Streuung der Messwerte veranschaulicht.</p>
+<p><strong>Histogramm und Zeitreihe</strong></p>
+<p>Für das Histogramm ist aktuell die einzige Einstellung die Sichtbarkeit. Das Histogramm bildet entweder alle Einzelwerte, oder aggregierte Werte pro Station (auf der Karte gezeigte Werte) ab und zeigt deren Verteilung. Minimum, Maximum und häufigster Wert lässt sich einfach eruieren. Über die Selectbox BAsis lässt sich einstellen ob Einzelwerte oder aggregierte Werte gezeigt werden. Die Basis Einzelwerte machen mehr Sinn bei wenigen Stationen mit je vielen Messwerten. Aggregierte Werte werden bevorzugt verwendet wenn es für den Sensor viele Stationen gibt wie z.B. für die Lufttemperatur.</p>
+<p>Die Zeitrihe zeigt den zeitlichen Verlauf der auf der Karte dargestellten Stationen. Bei vielen Stationen (z.B. bei der Lufttemperatur) mag die Figur verwirrend erschienen, doch gibt diese Darstellung schnell darüber Ausunft, ob es wenig plausible Messwerte (Ausriesser) gibt. Es gibt für die Zeitreihe drei Darstellungen: </p>
+<ul>
+<li>keine Aggregation der Stationen: jede Station wird als Linie dargestellt</li>
+<li>Mittelwert: Mittelwerte aller Stationen: eine einzige Linie </li>
+<li>Werteband: Mittelwert mit einenm Werteband Mittelwert +/- Standardabweichung, welches die Streuung der Messwerte veranschaulicht.</li>
+</ul>
 <p><strong>Filter</strong></p>
 <p>Über die Filtereinstellungen kann die Auswahl der gezeigten Werte eingegrenzt werden. 
-- Auswahl Stationen: Bei keiner Auswahl werden alle Stationen gezeigt, werden WErte ausgewählt, so erscheinen nur die Messerte dieser Stationen auf den Grafiken. 
-- Tageszeit: Es können die Stundenwerte, die in die Berechnung eingehen, definiert werden. So lässt sich zum Beispiel einfach eine tägliche oder nächtliche Jahres-Durchschnittstemperatur oder Lärmpegel für eine Station bestimmen. </p>
+- Auswahl Stationen: Bei keiner Auswahl werden alle Stationen gezeigt. Werden Stationen in die Multi-Selectbox-Auswahl aufgenommen, so erscheinen nur die Messerte dieser Stationen auf den Grafiken. 
+- Tageszeit: Es können die Stundenwerte, welche in die Berechnung eingehen, definiert werden. So lässt sich zum Beispiel einfach eine tägliche oder nächtliche Jahres-Durchschnittstemperatur oder Lärmpegel für eine Station bestimmen. </p>
 <p><strong>Auswahl Zeitintervall</strong></p>
 <p>Im Kopfbereich des Hauptfensters lässt sich über den Slider ein Zeitintervall auswählen. Die Länge des Zeitintintervalls hängt von der Wahl der Zeitlichen Aggregation in den Settings ab: Ist dort DAtum eingestellt, so können im Slider alle Tage mit Messwerten ausgewählt werden, ist die Aggreagation auf Woche eingestellt, so lassen sich im Slider die Kalenderwochen auswählen etc. Die Grafiken passen sich automatisch der neuen Wahl an.</p>
 <p><img alt="Settings" src="../img/time_interval.png" title="Settings" /> </p>
