@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://smart-bs.herokuapp.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://smart-bs.herokuapp.com/" />
       <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>smart-bs</title>
+    <title>Einführung - smart-bs</title>
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Home";
+        var mkdocs_page_name = "Einf\u00fchrung";
         var mkdocs_page_input_path = "index.md";
         var mkdocs_page_url = "/";
       </script>
@@ -40,15 +40,15 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href=".">Home</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Benutzeranleitung</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="" href="intro.md">Einführung</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href=".">Einführung</a>
+    <ul class="current">
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="#">Applikation</a>
     <ul>
@@ -81,7 +81,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Home</li>
+          <li>Benutzeranleitung &raquo;</li>
+      <li>Einführung</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -91,13 +92,18 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="smart-bs">smart-bs</h1>
-<p>Im Juni 2019 haben die SBB und der Kanton Basel-Stadt auf dem Areal Wolf das Smart City Lab Basel eröffnet: Denn Innovationen entstehen in Zusammenarbeit und brauchen Raum für Dialog und Experimente. Das Lab bietet die Möglichkeit, Ideen zu entwickeln, Know-How zu teilen, Daten zu nutzen und Technologien zu testen und diese zu erleben und gemeinsam zu diskutieren. Smat City Lab hat zusamen mit verschiedenen Partnern verschiedene Sensoren in und ausserhalb des Kantonsgebiets installiert, welche reichhaltige Daten zu Klima, Luftqualität, Verkehr etc. liefern. Diese Daten werden in Echtzeit auf dem <a href="https://data.bs.ch">Open Government Data Portal</a> zur Verfügung gestellt. </p>
-<p>Die Software <a href="https://www.opendatasoft.com/">Opendatasoft</a>, in welcher Opendata die Daten zur Verfügung stellt bietet zahlreiche Tools für die Darstellung und das Filtern von Daten, doch sind diese WErkzueuge meist zu generisch als dass sie für eine vertiefte Analyse der Sensoren-Datensätze genügen würden. 
-Die Appliaktion smart-bs bietet ein Dashboard, das speziell für diese Daten entwickelt wurde. Die Daten werden dazu speziell aufberietet und in einer eigenen Datenbank abgelegt. Dabei werden offensichtliche fehlerhafte Daten (z.B. Sensoren ohne Koordinaten Temperaturen &gt; 100°C etc.) entfernt.</p>
+<p>Im Juni 2019 haben die SBB und der Kanton Basel-Stadt auf dem Areal Wolf das <a href="https://smartcitylabbasel.ch/en/">Smart City Lab Basel</a> eröffnet: Denn Innovationen entstehen in Zusammenarbeit und brauchen Raum für Dialog und Experimente. Das Lab bietet die Möglichkeit, Ideen zu entwickeln, Know-How zu teilen, Daten zu nutzen und Technologien zu testen und diese zu erleben und gemeinsam zu diskutieren. Smart City Lab hat zusamen mit Partnern verschiedene Sensoren in und ausserhalb des Kantonsgebiets installiert, welche reichhaltige Daten zu Klima, Luftqualität, Verkehr etc. liefern. Diese Daten werden in Echtzeit auf dem <a href="https://data.bs.ch">Open Government Data Portal</a> des Kantons Basel-Stadt publiziert. </p>
+<p>Das <a href="https://data.bs.ch">Open Government Data Portal</a> bietet zahlreiche Tools für die Darstellung und das Filtern von Daten an, doch sind diese Werkzueuge meist zu generisch als dass sie für eine vertiefte Analyse der Sensoren-Datensätze genügen würden. 
+Die Applikation smart-bs bietet ein Dashboard, das speziell für diese Daten entwickelt wurde. Die Daten werden dazu speziell aufbereitet und in einer eigenen Datenbank abgelegt. Dabei werden offensichtliche fehlerhafte Daten (z.B. Sensoren ohne Koordinaten, Temperaturen &gt; 100°C etc.) entfernt. Zudem geht die Applikation auf Spezialanforderungen ein. Zum Beispiel werden die Mittelwerte von Schallpegelmessungen in der logarithmischen Einheit dB korrekt nach der folgenden Formel berechnet:</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">L_m = 10 · log(\frac{1}{N} · \sum_{i=1}^{N} 10^{0.1·L_i})</div>
+<script type="math/tex; mode=display">L_m = 10 · log(\frac{1}{N} · \sum_{i=1}^{N} 10^{0.1·L_i})</script>
+</div>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="info/" class="btn btn-neutral float-right" title="Info">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -121,6 +127,8 @@ Die Appliaktion smart-bs bietet ein Dashboard, das speziell für diese Daten ent
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
     
       <span><a href="info/" style="color: #fcfcfc">Next &raquo;</a></span>
     
@@ -129,6 +137,7 @@ Die Appliaktion smart-bs bietet ein Dashboard, das speziell für diese Daten ent
     <script>var base_url = '.';</script>
     <script src="js/theme_extra.js" defer></script>
     <script src="js/theme.js" defer></script>
+      <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
       <script src="search/main.js" defer></script>
     <script defer>
         window.onload = function () {
@@ -138,8 +147,3 @@ Die Appliaktion smart-bs bietet ein Dashboard, das speziell für diese Daten ent
 
 </body>
 </html>
-
-<!--
-MkDocs version : 1.4.0
-Build Date UTC : 2022-10-05 04:38:47.441621+00:00
--->

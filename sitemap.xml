@@ -2,32 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://smart-bs.herokuapp.com/</loc>
-         <lastmod>2022-10-05</lastmod>
+         <lastmod>2022-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://smart-bs.herokuapp.com/about/</loc>
-         <lastmod>2022-10-05</lastmod>
+         <lastmod>2022-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://smart-bs.herokuapp.com/explorer/</loc>
-         <lastmod>2022-10-05</lastmod>
+         <lastmod>2022-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://smart-bs.herokuapp.com/info/</loc>
-         <lastmod>2022-10-05</lastmod>
+         <lastmod>2022-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://smart-bs.herokuapp.com/intro/</loc>
+         <lastmod>2022-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://smart-bs.herokuapp.com/summary/</loc>
-         <lastmod>2022-10-05</lastmod>
+         <lastmod>2022-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://smart-bs.herokuapp.com/versions/</loc>
-         <lastmod>2022-10-05</lastmod>
+         <lastmod>2022-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

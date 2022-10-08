@@ -46,7 +46,7 @@
               </ul>
               <p class="caption"><span class="caption-text">Benutzeranleitung</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="" href="../intro.md">Einführung</a>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Einführung</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Applikation</a>
     <ul class="current">
@@ -102,13 +102,13 @@
 <p><img alt="Overview" src="../img/explorer_overview.png" title="Overview" /> </p>
 <h3 id="steuerung">Steuerung</h3>
 <p>Die Steuerung des Dashboard geschieht mit Ausnahme der Auswahl des Zeitintervalls in der Navigationsleiste. 
-über die Selectbox <code>Sensor</code>kann der Sensor ausgewählt werden, z.B. TEmperatur, Niederschlag, Feinstaub. Die Auswahl der folgenden Kontrolle-Elemente in ⚙️Settings und 🔎Filter passt sich in der Folge den Einstellungen des Sensors an und es werden nur Optionen angezeigt, die für diesen Sensor möglich sind.</p>
+über die Selectbox <code>Sensor</code> kann der Sensor ausgewählt werden: Temperatur, Lärm oder Feinstaub. Die Auswahl der folgenden Kontrolle-Elemente in ⚙️Settings und 🔎Filter passt sich in der Folge den Einstellungen des Sensors an und es werden nur Optionen angezeigt, die für diesen Sensor möglich und sinnvoll sind.</p>
 <p><strong>Settings</strong></p>
 <p><img alt="Settings" src="../img/settings.png" title="Settings" /> </p>
-<p>Die Zeitliche Aggregation definiert das Zeitintervall, mit welchem die Daten auf der Karte aggregiert werden. Über die Selectbox <code>Aggregation Karte</code> lässst sich die Funktion einstellen, mit welcher aggregiert wird: Mittelwert, Minimum, Maximum etc. Ist man an den Einzelwerten interessiert, so können diese in der Zeitreihe  eingesehen werden, deren Daten zeitlich nicht oder schwächer als in der Karte aggregiert sind.</p>
+<p>Die zeitliche Aggregation definiert das Zeitintervall, mit welchem die Daten auf der Karte aggregiert werden. Über die Selectbox <code>Aggregation Karte</code> lässt sich die Funktion einstellen, mit welcher aggregiert wird: Mittelwert, Minimum, Maximum etc. Ist man an den Einzelwerten interessiert, so können diese in der Zeitreihe  eingesehen werden, deren Daten zeitlich nicht oder schwächer als in der Karte aggregiert sind.</p>
 <p><strong>Histogramm und Zeitreihe</strong></p>
-<p>Für das Histogramm ist aktuell die einzige Einstellung die Sichtbarkeit. Das Histogramm bildet entweder alle Einzelwerte, oder aggregierte Werte pro Station (auf der Karte gezeigte Werte) ab und zeigt deren Verteilung. Minimum, Maximum und häufigster Wert lässt sich einfach eruieren. Über die Selectbox BAsis lässt sich einstellen ob Einzelwerte oder aggregierte Werte gezeigt werden. Die Basis Einzelwerte machen mehr Sinn bei wenigen Stationen mit je vielen Messwerten. Aggregierte Werte werden bevorzugt verwendet wenn es für den Sensor viele Stationen gibt wie z.B. für die Lufttemperatur.</p>
-<p>Die Zeitrihe zeigt den zeitlichen Verlauf der auf der Karte dargestellten Stationen. Bei vielen Stationen (z.B. bei der Lufttemperatur) mag die Figur verwirrend erschienen, doch gibt diese Darstellung schnell darüber Ausunft, ob es wenig plausible Messwerte (Ausriesser) gibt. Es gibt für die Zeitreihe drei Darstellungen: </p>
+<p>Für das Histogramm ist aktuell die einzige Einstellung die Sichtbarkeit. Das Histogramm bildet entweder alle Einzelwerte-, oder aggregierte Werte pro Station (auf der Karte gezeigte Werte) ab und zeigt deren Verteilung. Minimum, Maximum und häufigster Wert lässt sich einfach eruieren. Über die Selectbox Basis lässt sich einstellen ob Einzelwerte oder aggregierte Werte gezeigt werden. Die Basis <em>Einzelwerte</em> machen mehr Sinn bei wenigen Stationen mit je vielen Messwerten. Aggregierte Werte werden dann bevorzugt verwendet, wenn es für den Sensor viele Stationen gibt wie z.B. für die Lufttemperatur.</p>
+<p>Die Zeitreihe zeigt den zeitlichen Verlauf der, auf der Karte dargestellten Stationen. Bei vielen Stationen (z.B. bei der Lufttemperatur) kann die Figur verwirrend erscheinen, doch gibt diese Darstellung schnell darüber Ausunft, ob es wenig plausible Messwerte (Ausreisser) gibt. Es gibt für die Zeitreihe drei Darstellungs-Formen: </p>
 <ul>
 <li>keine Aggregation der Stationen: jede Station wird als Linie dargestellt</li>
 <li>Mittelwert: Mittelwerte aller Stationen: eine einzige Linie </li>
@@ -116,13 +116,13 @@
 </ul>
 <p><strong>Filter</strong></p>
 <p>Über die Filtereinstellungen kann die Auswahl der gezeigten Werte eingegrenzt werden. 
-- Auswahl Stationen: Bei keiner Auswahl werden alle Stationen gezeigt. Werden Stationen in die Multi-Selectbox-Auswahl aufgenommen, so erscheinen nur die Messerte dieser Stationen auf den Grafiken. 
+- Auswahl Stationen: Bei keiner Auswahl werden alle Stationen gezeigt. Werden Stationen in die Multi-Selectbox-Auswahl aufgenommen, so erscheinen nur die Messwerte dieser Stationen auf den Grafiken. 
 - Tageszeit: Es können die Stundenwerte, welche in die Berechnung eingehen, definiert werden. So lässt sich zum Beispiel einfach eine tägliche oder nächtliche Jahres-Durchschnittstemperatur oder Lärmpegel für eine Station bestimmen. </p>
 <p><strong>Auswahl Zeitintervall</strong></p>
-<p>Im Kopfbereich des Hauptfensters lässt sich über den Slider ein Zeitintervall auswählen. Die Länge des Zeitintintervalls hängt von der Wahl der Zeitlichen Aggregation in den Settings ab: Ist dort DAtum eingestellt, so können im Slider alle Tage mit Messwerten ausgewählt werden, ist die Aggreagation auf Woche eingestellt, so lassen sich im Slider die Kalenderwochen auswählen etc. Die Grafiken passen sich automatisch der neuen Wahl an.</p>
+<p>Im Kopfbereich des Hauptfensters lässt sich über den Slider ein Zeitintervall (Tag, Woche, Monat, Jahr) auswählen. Die Länge des Zeitintintervalls hängt von der Wahl der zeitlichen Aggregation in den Settings ab: Ist dort das Datum eingestellt, so können im Slider alle Tage mit Messwerten ausgewählt werden, ist die Aggreagation auf Woche eingestellt, so lassen sich im Slider die Kalenderwochen auswählen etc. Die Grafiken passen sich automatisch der neuen Wahl an.</p>
 <p><img alt="Settings" src="../img/time_interval.png" title="Settings" /> </p>
 <p><strong>Ausgabe numerisch</strong>
-Der Durschnitt und die Extrama (Minimum, Maximum) der auf der KArte darbestellten Werte werden über der Karte als fette Zahlen angezeigt. Die Extremwerte beziehen sich auf die pro Station aggregierten Werte. Der obere Wert ist also das Maximum der angezeigten Mittelwerte aller Stationen, nicht der höchste Wert im der gewählten Intervall. Möchte man den höchsten Wert wissen, so kann man als Aggregation die Maximalwerte auswählen. Damit wird der obere Wert zum Maximum aller Maxima pro Station, was dem Maximum aller Werte entspricht.</p>
+Der Durchschnitt und die Extrama (Minimum, Maximum) der auf der Karte dargestellten Werte werden über der Karte als fette Zahlen angezeigt. Die Extremwerte beziehen sich auf die pro Station aggregierten Werte. Der obere Wert ist also das Maximum der angezeigten Mittelwerte aller Stationen, nicht der höchste Wert im der gewählten Intervall. Möchte man den höchsten Wert wissen, so lässt sich als Aggregation die Maximalwerte auswählen. Damit wird der obige Wert zum Maximum aller Maxima pro Station, was dem Maximum aller Werte entspricht.</p>
 <p><img alt="BAN" src="../img/ban.png" title="BAN" /> </p>
               
             </div>
@@ -162,6 +162,7 @@ Der Durschnitt und die Extrama (Minimum, Maximum) der auf der KArte darbestellte
     <script>var base_url = '..';</script>
     <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
+      <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
       <script src="../search/main.js" defer></script>
     <script defer>
         window.onload = function () {
